@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="p1.css">
+
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery" >Gallery</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+           <i class="fas fa-search" id="search-btn"></i>
+           <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+
+            <input type="search" id="search-bar" placeholder="search here...." >
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Login Form Container -->
+    
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your mail">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password?<a href="#">Click here</a> </p>
+            <p>don't have an account?<a href="#">register now</a> </p>
+        </form>
+    </div>
+    <!-- login form end -->
+    
+    <!-- Home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventure awaits</h3>
+            <p>Travel with us and collect moments</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="gallery/vid2.mp4"></span>
+            <span class="vid-btn" data-src="gallery/vid1.mp4"></span>
+            <span class="vid-btn" data-src="gallery/vid3.mp4"></span>
+            <span class="vid-btn" data-src="gallery/vid4.mp4"></span>
+            <!-- <span class="vid-btn" data-src="gallery/vid1.mp4"></span> -->
+        </div>
+
+        <div class="video-container">
+            <video src="gallery/vid2.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!-- Home section ends -->
+
+    <!-- Book section starts -->
+    <section class="book" id="book">
+        <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="gallery/book1.jpg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit"  class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+    <!-- Book section ends -->
+
+    <!-- Package section starts -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="gallery/p1img1.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>leh ladakh</h3>
+                        <p>Ladakh is an adventure playground for rafting and high-altitude trekking. Note that Leh Ladakh is inaccessible by road outside the summer months. The route passes close altogether from around October to May, and the only way to reach is by air. Chadar trek on frozen Zanskar river takes place in January to the end of February.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span> </div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="gallery/p2img1.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>qatar</h3>
+                        <p>n just forty years, this Gulf state has grown from one of the poorest countries in the Gulf to the richest in the world. Mainly functioning on oil and natural gas revenue, Qatar is developing at breakneck speed, and everything from universities to shopping malls, 5-star hotels to football stadiums (in preparation for the 2022 World Cup) are springing up along the desert floor</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span> </div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="gallery/p3img3.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>singapore</h3>
+                        <p>Best described as a microcosm of modern Asia, Singapore is a melting pot of culture and history, and an extravaganza of culinary delights. Officially known as the Republic of Singapore, it is both a city and a country located in Southeast Asia. One of Asia's most visited destinations, Singapore is best described as an amalgam of a fast-paced life and an off-the-back-street inheritance.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span> </div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="gallery/p4img1.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>maldives</h3>
+                        <p>The Maldives is an archipelagic state situated in the Indian Ocean known for its luxurious water villas. A tropical haven of white sand beaches, the Maldives is located in the south of Sri Lanka and is ideal for an adventure, honeymoon, or leisure holiday.
+                            Imagine having a room on a pier jutting out from the shore with a glass floor under which manta rays and reef sharks can be seen swimming, and step out from your overwater bungalow to the view of turquoise water.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span> </div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="gallery/p5img1.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>vietnam</h3>
+                        <p>Vietnam in south-eastern Asia is arguably one of the most beautiful countries on the continent. Known for its natural beauty and abundance of natural attractions such as the vast paddy fields, limestone islands in Halong Bay or the massive cave system in Phong Nha Ke Bang National Park, the country provides quite an unmatched experience. On the other hand, moulded by its turbulent and war-torn history, Vietnam today is a distant shadow of its past with the cities and towns brimming with tall and looming skyscrapers, quaint floating markets and mopeds zooming through the roads. Add to that the ever-delightful authentic Vietnamese cuisine which is fast gaining popularity around the world and you have a wholesome experience like no other.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span> </div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="gallery/p6img1.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>bhutan</h3>
+                        <p>The ‘Land of the Thunder Dragon’ – Bhutan nestles in the mountainous regions of the Eastern Himalayas and is one of the cleanest countries in the South Asian territory. A remote kingdom that still clings to its Buddhist culture but embraces modernisation, Bhutan is a land with monasteries, traditional architecture, beautiful valleys, snow-clad mountain views and lush greenery. Being landlocked, the country enjoys a significant tourist influx from its neighbours, Tibet and India.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">$90.00 <span>$120.00</span> </div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Package section ends -->
+
+    <!--Service section ends  -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>Our travel agency is committed to providing exceptional service when it comes to booking affordable hotel accommodations. We understand the importance of finding quality lodging at a budget-friendly price. With our extensive network of hotel partners, we offer a wide range of options that cater to various budgets and preferences. Let us help you find the perfect affordable hotel, ensuring a comfortable and enjoyable stay during your travels.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>
+                    Indulge your taste buds with our travel agency's outstanding food and drinks service. We believe that culinary experiences are an integral part of any journey, and we strive to provide exceptional dining options for our clients. From recommending local eateries to arranging unique food tours, our team ensures that you savor the flavors of your destination. </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safety guide</h3>
+                <p>Your safety is our top priority, and our travel agency is dedicated to providing comprehensive safety guide services. We go the extra mile to ensure that you have a secure and worry-free journey. From offering essential travel tips and providing up-to-date information on destinations to assisting with travel insurance and emergency contacts, we equip you with the knowledge and resources to navigate safely</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>We specialize in crafting seamless itineraries that take you across continents, allowing you to explore multiple destinations in one epic journey. From arranging flights and accommodations to coordinating visas and local transportation, we handle all the logistics, leaving you free to immerse yourself in the diverse cultures and breathtaking landscapes of our planet</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>Experience the thrill of speed with our travel agency's fastest travel service. We understand the value of time, and we specialize in arranging swift and efficient travel options to get you to your destination in record time. From expedited check-ins and priority boarding to seamless connections and streamlined itineraries, we ensure that every moment of your journey is optimized for speed.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>Unleash your inner adventurer with our travel agency's exhilarating adventure service. We curate adrenaline-pumping experiences that cater to thrill-seekers and outdoor enthusiasts alike. From epic hiking expeditions and heart-pounding water sports to breathtaking wildlife encounters and daring skydiving adventures, we offer a wide range of thrilling activities in stunning destinations worldwide. </p>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Service section ends -->
+
+    <!-- gallery section starts -->
+    <section class="gallery gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="gallery/g1.jpeg" alt="">
+                <div class="content">
+                    <h3>Eiffel Tower</h3>
+                    <p>Parisian landmark boasts panoramic city vistas, attracts millions yearly.</p>
+                    <a href="#" class="btn">sea more..</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gallery/g2.jpeg" alt="">
+                <div class="content">
+                    <h3>Taj Mahal</h3>
+                    <p>Agra's crown jewel enchants with timeless beauty.</p>
+                    <a href="#" class="btn">sea more..</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gallery/g3.jpeg" alt="">
+                <div class="content">
+                    <h3>Big Ben Clock Tower</h3>
+                    <p>London's iconic timekeeper stands tall</p>
+                    <a href="#" class="btn">sea more..</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gallery/g4.jpeg" alt="">
+                <div class="content">
+                    <h3> Trevi Fountain</h3>
+                    <p>Rome's coin-filled wonder mesmerizes.</p>
+                    <a href="#" class="btn">sea more..</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gallery/g5.jpeg" alt="">
+                <div class="content">
+                    <h3> Gate of Dolmabahce Palace</h3>
+                    <p>Istanbul's regal gateway beckons</p>
+                    <a href="#" class="btn">sea more..</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gallery/g6.jpeg" alt="">
+                <div class="content">
+                    <h3>Rocky Mountains </h3>
+                    <p>Nature's grandeur showcased in Rocky Mountain NP.</p>
+                    <a href="#" class="btn">sea more..</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gallery/g7.jpeg" alt="">
+                <div class="content">
+                    <h3>Maldives Beach</h3>
+                    <p>Tropical paradise: Maldives' stunning shores.</p>
+                    <a href="#" class="btn">sea more..</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gallery/g8.jpeg" alt="">
+                <div class="content">
+                    <h3>White Muslim Mosque</h3>
+                    <p>Elegant mosque shines with serenity.</p>
+                    <a href="#" class="btn">sea more..</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gallery/g9.jpeg" alt="">
+                <div class="content">
+                    <h3>Coliseum</h3>
+                    <p>Rome's ancient marvel captivates all.</p>
+                    <a href="#" class="btn">sea more..</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- gallery section ends -->
+
+    <!-- review section starts -->
+    <section class="review" id="reviews">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+            <span>s</span>
+        </h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="gallery/r1.jpg" alt="">
+                        <h3>Reema</h3>
+                        <p>I had an incredible adventure thanks to team. Their knowledgeable guides, well-planned itinerary, and attention to detail made the trip seamless and unforgettable.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="gallery/r2.jpeg" alt="">
+                        <h3>Jhon</h3>
+                        <p>Team provided exceptional customer service from start to finish. They were responsive, accommodating, and ensured all my travel needs were met. I highly recommend their services</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="gallery/r3.jpeg" alt="">
+                        <h3>Srinaya</h3>
+                        <p>I'm a frequent traveler, and  this team has consistently impressed me. Their expertise in crafting unique itineraries and their professionalism set them apart. I will continue to entrust them with my travel plans.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="gallery/r4.jpg" alt="">
+                        <h3>Virat</h3>
+                        <p>Kudos to team, for their outstanding customer care. They promptly resolved any issues that arose during my trip, ensuring I had a smooth and pleasant experience. I wouldn't hesitate to book with them again.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+    <!-- review section ends -->
+    <!-- contact section starts -->
+    <section section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="gallery/con1.jpg" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+    </section>
+    <!-- contact section ends -->
+    <!-- brand section -->
+    <!-- <section class="brand-container">
+        <div class="brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="" alt=""></div>
+            </div>
+        </div>
+    </section> -->
+
+    <!--footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Welcome to our travel agency, where your dreams take flight and extraordinary experiences await! With a passion for exploration and a commitment to exceptional service, we strive to make your travel adventures truly unforgettable.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">India</a>
+                <a href="#">australia</a>
+                <a href="#">USA</a>
+                <a href="#">Germany</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#reviews">review</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">instagram</a>
+                <a href="#">facebook</a>
+                <a href="#">linkedin</a>
+                <a href="#">twitter</a>
+                
+            </div>
+        </div>
+        <h1 class="credit">created by <span>Prathyusha</span> | all rights reserved! </h1>
+    </section>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+<script src="p1.js"></script>
+</html>
